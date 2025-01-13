@@ -61,7 +61,6 @@ class ProductListScreen extends StatelessWidget {
               onPressed: () {
                 Product product = productList[index];
                 cartProvider.addToCart(product);
-
                 cartProvider.cartItems.forEach((element) {
                   print('name : ${element.product.name}     quantity : ${element.quantity}');
                 });
